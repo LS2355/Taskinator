@@ -236,7 +236,7 @@ var saveTasks = function() {
 var loadTasks = function() { 
 //checks if there is anything in the storage  
   if (localStorage.getItem('tasks') == null){
-    localStorage.setItem('task', '[]');
+    localStorage.setItem('tasks', '[]');
   }
   //loads tasks from local storage
    var loadedTasks = JSON.parse(localStorage.getItem('tasks'));
